@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Review Transparency</title>
+<meta name="description" content="How the automated community reviews on Omarchy pull requests are made: live status, which agent contributed what, what was filtered out and why, and the evaluations behind each role.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="preload" href="fonts/jetbrains-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='4' fill='%232a78d6'/%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' stroke='white' stroke-width='2' fill='none'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="bar">
+    <a class="brand" href="#/">omarchy-pr<span> · review transparency</span></a>
+    <nav id="nav" aria-label="Sections">
+      <a href="#/" data-r="" title="Overview"><b>1</b><span>overview</span></a>
+      <a href="#/how" data-r="how" title="How it works"><b>2</b><span>how</span></a>
+      <a href="#/reviews" data-r="reviews" title="Reviews"><b>3</b><span>reviews</span></a>
+      <a href="#/evals" data-r="evals" title="Evaluations"><b>4</b><span>evals</span></a>
+      <a href="#/about" data-r="about" title="Method and privacy"><b>5</b><span>method</span></a>
+    </nav>
+    <div class="mid" id="status" aria-live="polite"></div>
+    <span class="spacer"></span>
+    <button class="theme-btn" id="theme" type="button" aria-label="Change theme">theme</button>
+  </div>
+</header>
+<main id="app"><div class="loading">loading</div></main>
+<footer id="foot"></footer>
+<div class="tip" id="tip" role="tooltip"></div>
+<script src="app.js"></script>
+</body>
+</html>
